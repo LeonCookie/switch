@@ -7,14 +7,63 @@
     tools:context=".MainActivity">
 
     <Switch
-        android:id="@+id/switchBG"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Switch"
+        android:id="@+id/switchImie"
+        android:layout_width="80dp"
+        android:layout_height="48dp"
+        android:minHeight="48dp"
+        android:text="Imie"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.858"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.876" />
+        app:layout_constraintVertical_bias="0.6" />
+
+    <Switch
+        android:id="@+id/switchNazw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:minHeight="48dp"
+        android:text="Nazwisko"
+        app:layout_constraintEnd_toEndOf="@+id/switchImie"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/switchImie"
+        app:layout_constraintTop_toBottomOf="@+id/switchImie" />
+
+    <Switch
+        android:id="@+id/switchMail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:minHeight="48dp"
+        android:text="Mail"
+        app:layout_constraintEnd_toEndOf="@+id/switchNazw"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/switchNazw"
+        app:layout_constraintTop_toBottomOf="@+id/switchNazw" />
+
+    <Switch
+        android:id="@+id/switchWiek"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:minHeight="48dp"
+        android:text="Wiek"
+        app:layout_constraintEnd_toEndOf="@+id/switchMail"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="@+id/switchMail"
+        app:layout_constraintTop_toBottomOf="@+id/switchMail" />
+
+    <Switch
+        android:id="@+id/switchPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:minHeight="48dp"
+        android:text="Phone"
+        app:layout_constraintEnd_toEndOf="@+id/switchWiek"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="@+id/switchWiek"
+        app:layout_constraintTop_toBottomOf="@+id/switchWiek" />
 </androidx.constraintlayout.widget.ConstraintLayout>

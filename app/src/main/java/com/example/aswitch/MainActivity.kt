@@ -1,12 +1,18 @@
 package com.example.aswitch
 
 import android.app.Activity
+import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.Toast
 import com.example.aswitch.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
+
+
+
+
 
     private lateinit var binding: ActivityMainBinding
 
@@ -21,10 +27,14 @@ class MainActivity : AppCompatActivity() {
 
     }
         private fun setCheckedChangeListener() {
-            binding.switchBG.setOnCheckedChangeListener { _, isChecked ->
-                val msg = getString(if (isChecked) R.string.on else R.string.off)
-                Toast.makeText(this@MainActivity, msg, Toast.LENGTH_SHORT).show()
-                binding.switchBG.text = msg
+
+
+
+            binding.switchImie.setOnCheckedChangeListener { _, isChecked ->
+
+                if(binding.switchImie.isEnabled){
+
+                }
             }
         }
 
