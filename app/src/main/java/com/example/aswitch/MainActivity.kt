@@ -46,31 +46,31 @@ class MainActivity : AppCompatActivity() {
             binding.switchImie.setOnCheckedChangeListener { _, isChecked ->
 
                 if(binding.switchImie.isEnabled){
-                    imie
+                    imie.isFocusable = false
                 }
             }
             binding.switchNazw.setOnCheckedChangeListener { _, isChecked ->
 
                 if(binding.switchNazw.isEnabled){
-
+                    nazw.isFocusable = false
                 }
             }
             binding.switchImie.setOnCheckedChangeListener { _, isChecked ->
 
                 if(binding.switchMail.isEnabled){
-
+                    mail.isFocusable = false
                 }
             }
             binding.switchImie.setOnCheckedChangeListener { _, isChecked ->
 
                 if(binding.switchWiek.isEnabled){
-
+                    wiek.isFocusable = false
                 }
             }
             binding.switchImie.setOnCheckedChangeListener { _, isChecked ->
 
                 if(binding.switchPhone.isEnabled){
-
+                    phone.isFocusable = false
                 }
             }
         }
