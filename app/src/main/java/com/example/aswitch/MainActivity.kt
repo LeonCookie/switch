@@ -64,10 +64,9 @@ class MainActivity : AppCompatActivity() {
                     nazw.isClickable = false
                     nazw.setHintTextColor(Color.RED)
 
-                }
-                    else{
-                        nazw.isEnabled = true
-                        nazw.isClickable = true
+                }else{
+                    nazw.isEnabled = true
+                    nazw.isClickable = true
                     nazw.setHintTextColor(Color.GREEN)
 
 
