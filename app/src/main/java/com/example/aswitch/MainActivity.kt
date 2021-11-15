@@ -2,6 +2,7 @@ package com.example.aswitch
 
 import android.app.Activity
 import android.graphics.Color
+import android.graphics.Color.RED
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -46,31 +47,69 @@ class MainActivity : AppCompatActivity() {
             binding.switchImie.setOnCheckedChangeListener { _, isChecked ->
 
                 if(binding.switchImie.isEnabled){
-                    imie.isFocusable = false
+                    imie.isEnabled = false
+                    imie.isClickable = false;
+                    imie.setHintTextColor(Color.RED)
+                }else{
+                    imie.isEnabled = true
+                    imie.isClickable = true
+                    imie.setHintTextColor(Color.GREEN)
+
                 }
             }
             binding.switchNazw.setOnCheckedChangeListener { _, isChecked ->
 
-                if(binding.switchNazw.isEnabled){
-                    nazw.isFocusable = false
+                if(binding.switchNazw.isEnabled) {
+                    nazw.isEnabled = false
+                    nazw.isClickable = false
+                    nazw.setHintTextColor(Color.RED)
+
+                }
+                    else{
+                        nazw.isEnabled = true
+                        nazw.isClickable = true
+                    nazw.setHintTextColor(Color.GREEN)
+
+
                 }
             }
             binding.switchImie.setOnCheckedChangeListener { _, isChecked ->
 
                 if(binding.switchMail.isEnabled){
-                    mail.isFocusable = false
+                    mail.isEnabled = false
+                    mail.isClickable = false
+                    mail.setHintTextColor(Color.RED)
+                }else{
+
+                        mail.isEnabled = true
+                        mail.isClickable = true
+                    mail.setHintTextColor(Color.GREEN)
+
+                    }
                 }
-            }
+
             binding.switchImie.setOnCheckedChangeListener { _, isChecked ->
 
                 if(binding.switchWiek.isEnabled){
-                    wiek.isFocusable = false
+                    wiek.isEnabled = false
+                    wiek.isClickable = false
+                    wiek.setHintTextColor(Color.RED)
+                }else{
+                    wiek.isEnabled = true
+                    wiek.isClickable = true
+                    wiek.setHintTextColor(Color.GREEN)
                 }
             }
             binding.switchImie.setOnCheckedChangeListener { _, isChecked ->
 
                 if(binding.switchPhone.isEnabled){
-                    phone.isFocusable = false
+                    phone.isEnabled = false
+                    phone.isClickable = false
+                    phone.setHintTextColor(Color.RED)
+                }else{
+                    phone.isEnabled = true
+                    phone.isClickable = true
+                    phone.setHintTextColor(Color.GREEN)
                 }
             }
         }
